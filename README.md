@@ -4,6 +4,10 @@ Visor PDF estático para Canvas LMS, basado en **PageFlipOpen 0.4.3**. GitHub Pa
 
 **Sitio publicado:** https://elektraec.github.io/canvas-flipbook/
 
+## Logo y colores
+
+El logo está en `assets/logo-indoamerica.png` y se muestra en el encabezado desde una ruta relativa compatible con GitHub Pages. Para reemplazarlo, conserva ese nombre y usa un PNG de fondo transparente. La paleta de la Universidad Indoamérica está definida al inicio de `styles.css`: `#3a1467`, `#542e91`, `#644a98`, `#f37121`, `#ffd54c` y `#ffffff`. Consulta `assets/README.md`.
+
 ## Uso
 
 Coloca tus PDF en una de estas carpetas:

@@ -1,31 +1,34 @@
-:root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #edf2f5; color: #17283b; }
+:root { --brand-primary: #3a1467; --brand-secondary: #542e91; --brand-muted: #644a98; --brand-orange: #f37121; --brand-gold: #ffd54c; --brand-white: #ffffff; --brand-soft: #f1ebf8; color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f3fa; color: var(--brand-primary); }
 * { box-sizing: border-box; }
 html, body { min-width: 280px; min-height: 100%; margin: 0; }
-body { background: linear-gradient(145deg, #f5f8fa, #e8eef2); }
+body { background: linear-gradient(145deg, #faf8fc, #f0eaf7); }
 button, a { -webkit-tap-highlight-color: transparent; }
 .app { width: min(100%, 1600px); min-height: 100dvh; margin: auto; padding: clamp(12px, 2vw, 28px); display: flex; flex-direction: column; gap: 16px; }
-.topbar { min-height: 46px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-.brand { display: flex; align-items: center; gap: 9px; font-size: 16px; letter-spacing: -.025em; white-space: nowrap; }
-.brand strong { font-weight: 750; }
-.brand-icon { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 9px; background: #164760; color: white; font-size: 22px; line-height: 1; }
-.topbar-label, .eyebrow { color: #5e7483; font-size: 12px; font-weight: 650; letter-spacing: .07em; text-transform: uppercase; }
-.viewer-shell { flex: 1; min-height: 0; overflow: hidden; border: 1px solid #d9e3e9; border-radius: 18px; background: #fff; box-shadow: 0 20px 60px rgba(27, 55, 75, .09); }
-.document-bar { min-height: 88px; padding: 20px clamp(16px, 3vw, 32px); display: flex; align-items: center; justify-content: space-between; gap: 20px; border-bottom: 1px solid #e5ebef; }
+.topbar { min-height: 76px; padding: 9px clamp(14px, 2vw, 28px); display: flex; align-items: center; justify-content: space-between; gap: 16px; border-radius: 14px; background: var(--brand-white); box-shadow: 0 8px 28px rgba(58, 20, 103, .07); }
+.brand { display: flex; align-items: center; min-width: 0; }
+.brand-logo { display: block; width: clamp(180px, 21vw, 250px); max-width: 100%; height: auto; }
+.topbar-label, .eyebrow { color: var(--brand-muted); font-size: 12px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
+.topbar-label { padding-left: 12px; border-left: 3px solid var(--brand-gold); }
+.viewer-shell { flex: 1; min-height: 0; overflow: hidden; border: 1px solid #ded4eb; border-top: 4px solid var(--brand-orange); border-radius: 18px; background: var(--brand-white); box-shadow: 0 20px 60px rgba(58, 20, 103, .1); }
+.document-bar { min-height: 88px; padding: 20px clamp(16px, 3vw, 32px); display: flex; align-items: center; justify-content: space-between; gap: 20px; border-bottom: 1px solid #e9e2f1; }
 .document-heading { min-width: 0; }
 .document-heading h1 { overflow: hidden; margin: 3px 0 0; font-size: clamp(17px, 2vw, 23px); line-height: 1.25; text-overflow: ellipsis; white-space: nowrap; }
-.open-link { flex: none; color: #145d7d; font-size: 13px; font-weight: 700; text-decoration: none; }
+.open-link { flex: none; color: var(--brand-primary); font-size: 13px; font-weight: 700; text-decoration: none; }
 .open-link:hover, .open-link:focus-visible { text-decoration: underline; }
 .message { min-height: min(65vh, 600px); padding: 30px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
 .message[hidden], .flipbook[hidden], .open-link[hidden] { display: none !important; }
-.message-icon { display: grid; place-items: center; width: 60px; height: 60px; border-radius: 18px; background: #e4f1f4; color: #145d7d; font-size: 28px; }
+.message-icon { display: grid; place-items: center; width: 60px; height: 60px; border-radius: 18px; background: var(--brand-soft); color: var(--brand-secondary); font-size: 28px; border-bottom: 3px solid var(--brand-gold); }
 .message h2 { margin: 20px 0 6px; font-size: clamp(19px, 3vw, 25px); }
-.message p { max-width: 520px; margin: 0; color: #5e7483; line-height: 1.6; }
-.message code { padding: 2px 5px; border-radius: 4px; background: #edf3f5; color: #21485e; font-size: .9em; overflow-wrap: anywhere; }
-.flipbook { width: 100%; min-height: 420px; background: #e9eef1 !important; }
-.footer { padding: 0 4px 5px; color: #647987; font-size: 12px; text-align: center; }
+.message p { max-width: 520px; margin: 0; color: var(--brand-muted); line-height: 1.6; }
+.message code { padding: 2px 5px; border-radius: 4px; background: var(--brand-soft); color: var(--brand-primary); font-size: .9em; overflow-wrap: anywhere; }
+.flipbook { --pfo-toolbar-bg: var(--brand-primary); --pfo-toolbar-color: var(--brand-white); --pfo-toolbar-hover: rgba(255, 213, 76, .22); width: 100%; min-height: 420px; background: var(--brand-soft) !important; }
+.flipbook .pfo-btn:hover { color: var(--brand-gold); }
+.flipbook .pfo-page-input:focus { border-color: var(--brand-gold); }
+.footer { padding: 0 4px 5px; color: var(--brand-muted); font-size: 12px; text-align: center; }
 @media (max-width: 600px) {
   .app { gap: 10px; padding: 8px; }
-  .topbar { min-height: 38px; padding-inline: 4px; }
+  .topbar { min-height: 58px; padding: 7px 12px; border-radius: 10px; }
+  .brand-logo { width: clamp(150px, 44vw, 190px); }
   .topbar-label { display: none; }
   .viewer-shell { border-radius: 12px; }
   .document-bar { min-height: 70px; padding: 14px; }
