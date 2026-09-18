@@ -2,6 +2,8 @@
 
 Visor PDF estático para Canvas LMS, basado en **PageFlipOpen 0.4.3**. GitHub Pages sirve directamente `index.html`; Node y npm solo se necesitan para preparar los archivos o ejecutar el servidor local. El paquete instalado queda en `node_modules/`, que Git ignora. Los únicos archivos de PageFlipOpen publicados están en `vendor/pageflipopen/` (bundle, CSS, worker de PDF.js y licencia).
 
+**Sitio publicado:** https://elektraec.github.io/canvas-flipbook/
+
 ## Uso
 
 Coloca tus PDF en una de estas carpetas:
@@ -17,7 +19,7 @@ pdf/
 Ejemplo: `pdf/ihm/semana01.pdf` se abre con:
 
 ```text
-https://USUARIO.github.io/canvas-flipbook/?file=ihm/semana01.pdf
+https://elektraec.github.io/canvas-flipbook/?file=ihm/semana01.pdf
 ```
 
 El repositorio incluye un PDF de muestra de tres páginas en esa ruta para comprobar el visor. Reemplázalo por tu material antes de compartir el enlace con estudiantes. Se puede regenerar con `node scripts/create-sample.mjs`.
@@ -36,10 +38,14 @@ npm start
 
 Abre `http://localhost:4173/?file=ihm/semana01.pdf` después de añadir el PDF. También puedes abrir `http://localhost:4173/` para ver la pantalla de instrucciones. Tras actualizar PageFlipOpen, vuelve a ejecutar `npm run prepare:vendor` y confirma los cambios de `vendor/`.
 
-## Publicar gratis con GitHub Pages
+## Publicación en GitHub Pages
 
-1. Crea un repositorio **público** llamado `canvas-flipbook` en tu cuenta de GitHub.
-2. En esta carpeta, ejecuta:
+El repositorio público ya está en https://github.com/elektraec/canvas-flipbook. Pages publica desde la rama `main`, carpeta `/ (root)`. Para publicar cambios, agrega o reemplaza los PDF, haz un commit y ejecuta `git push origin main`.
+
+Para instalar este proyecto en otra cuenta de GitHub:
+
+1. Crea un repositorio **público** llamado `canvas-flipbook`.
+2. Configura su URL como remoto de esta carpeta y sube `main`:
 
    ```bash
    git remote add origin https://github.com/USUARIO/canvas-flipbook.git
@@ -47,7 +53,7 @@ Abre `http://localhost:4173/?file=ihm/semana01.pdf` después de añadir el PDF. 
    ```
 
 3. En GitHub, abre **Settings → Pages**. En **Build and deployment**, elige **Deploy from a branch**, rama `main` y carpeta `/ (root)`. Guarda la configuración.
-4. Cuando termine la publicación, verifica `https://USUARIO.github.io/canvas-flipbook/?file=ihm/semana01.pdf`.
+4. Cuando termine la publicación, verifica `https://TU_USUARIO.github.io/canvas-flipbook/?file=ihm/semana01.pdf`.
 
 No hace falta ejecutar npm en GitHub Pages. El archivo `.nojekyll` indica que los archivos estáticos se deben servir tal como están. Si un nombre de PDF tiene espacios o acentos, codifícalo en el enlace URL.
 
@@ -57,7 +63,7 @@ En el editor HTML de una página de Canvas, usa:
 
 ```html
 <iframe
-  src="https://USUARIO.github.io/canvas-flipbook/?file=ihm/semana01.pdf"
+  src="https://elektraec.github.io/canvas-flipbook/?file=ihm/semana01.pdf"
   width="100%"
   height="750"
   style="border:0;"
@@ -66,7 +72,7 @@ En el editor HTML de una página de Canvas, usa:
 </iframe>
 ```
 
-Sustituye `USUARIO` por tu usuario de GitHub. Los PDF del repositorio público serán accesibles públicamente. Si Canvas elimina el `iframe` al guardar, revisa las políticas de contenido externo de tu instancia de Canvas.
+Si publicas una copia en otra cuenta, sustituye `elektraec` por tu usuario de GitHub. Los PDF del repositorio público serán accesibles públicamente. Si Canvas elimina el `iframe` al guardar, revisa las políticas de contenido externo de tu instancia de Canvas.
 
 ## Créditos
 
