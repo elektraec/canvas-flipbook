@@ -1,0 +1,54 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Length 157 >>
+stream
+BT /F1 28 Tf 72 700 Td (Canvas Flipbook) Tj /F1 17 Tf 0 -50 Td (Documento de ejemplo) Tj /F1 12 Tf 0 -42 Td (Sustituye este archivo por tu PDF de IHM.) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 158 >>
+stream
+BT /F1 28 Tf 72 700 Td (Pagina 2) Tj /F1 17 Tf 0 -50 Td (Navegacion de prueba) Tj /F1 12 Tf 0 -42 Td (Usa las flechas, el teclado o la barra del libro.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 155 >>
+stream
+BT /F1 28 Tf 72 700 Td (Pagina 3) Tj /F1 17 Tf 0 -50 Td (Zoom y pantalla completa) Tj /F1 12 Tf 0 -42 Td (Funciones proporcionadas por PageFlipOpen.) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000000405 00000 n 
+0000000531 00000 n 
+0000000740 00000 n 
+0000000866 00000 n 
+0000001072 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+1198
+%%EOF

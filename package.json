@@ -1,0 +1,14 @@
+{
+  "name": "canvas-flipbook",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Visor PDF estático con PageFlipOpen para Canvas LMS y GitHub Pages",
+  "scripts": {
+    "prepare:vendor": "node scripts/prepare-vendor.mjs",
+    "start": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "pageflipopen": "^0.4.3"
+  }
+}

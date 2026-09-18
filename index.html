@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#17283b">
+    <title>Canvas Flipbook</title>
+    <link rel="stylesheet" href="./vendor/pageflipopen/pageflipopen.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./vendor/pageflipopen/pageflipopen.min.js"></script>
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <main class="app">
+      <header class="topbar">
+        <div class="brand" aria-label="Canvas Flipbook">
+          <span class="brand-icon" aria-hidden="true">▤</span>
+          <span>Canvas <strong>Flipbook</strong></span>
+        </div>
+        <span class="topbar-label">Visor de documentos</span>
+      </header>
+
+      <section class="viewer-shell" aria-labelledby="document-title">
+        <div class="document-bar">
+          <div class="document-heading">
+            <span class="eyebrow">Documento PDF</span>
+            <h1 id="document-title">Selecciona un documento</h1>
+          </div>
+          <a id="open-pdf" class="open-link" href="#" target="_blank" rel="noopener" hidden>Abrir PDF ↗</a>
+        </div>
+
+        <div id="message" class="message" role="status" aria-live="polite">
+          <span class="message-icon" aria-hidden="true">↗</span>
+          <h2>Abre un libro con su enlace</h2>
+          <p>Añade <code>?file=ihm/semana01.pdf</code> a la URL. El archivo debe estar dentro de la carpeta <code>pdf/</code>.</p>
+        </div>
+        <div id="flipbook" class="flipbook" hidden aria-label="Visor interactivo de PDF"></div>
+      </section>
+
+      <footer class="footer">Usa la barra del libro, las flechas del teclado o desliza la pantalla para avanzar.</footer>
+    </main>
+  </body>
+</html>
